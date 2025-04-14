@@ -29,3 +29,11 @@ It includes a **Deployment** and a **NodePort Service** to expose the applicatio
 docker build -t vivek512/nodeapp:latest .
 docker push vivek512/nodeapp:latest
 
+### 2. Creating resources in Kubernetes
+
+```bash
+cd k8s
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+kubectl get all
